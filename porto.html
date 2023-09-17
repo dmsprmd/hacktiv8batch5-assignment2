@@ -2,13 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device, initial-scale=1.0" />
-    <title>Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <title>Assigment 1</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav>
+    <nav class="nav">
       <ul>
         <a href="index.html"><li>Home</li></a>
         <a href=""><li>Product</li></a>
@@ -17,19 +16,17 @@
         <a href=""><li>Inventory</li></a>
       </ul>
     </nav>
-    <!-- konten -->
-    <div class="bawah">
-      <section class="profil">
+    <section class="section">
+      <header class="column" id="top">
         <div>
-          <img src="image/profile.jpg" alt="Gambar" />
+          <img src="img/profile.jpg" alt="logo" />
         </div>
-        <div class="kontak">
+        <div class="personal">
           <h1 id="nama">Dimas Permadi</h1>
-          <p id="role">Front End Designer</p>
-          <div>
-            <button class="edit" id="editButton" type="button">Edit</button>
-            <button class="resume">Resume</button>
-          </div>
+          <p id="role">Frontend Designer</p>
+          <a id="editButton" type="button" class="edit" href="#"> Edit </a>
+
+          <a type="button" class="resume" href>Resume</a>
         </div>
         <div>
           <p class="v1"></p>
@@ -46,66 +43,54 @@
           <p id="experience">2</p>
           <p id="email">dimaspermadi@gmail.com</p>
         </div>
-      </section>
-      <!-- input form  -->
-      <div class="form-contact">
-        <form class="form" id="form" onsubmit="return Portofolio();">
-          <label for="inputnama">Nama</label>
-          <input
-            type="text"
-            name="nama"
-            id="inputnama"
-            placeholder="Nama Anda"
-          />
+      </header>
+      <form class="form" id="form" onsubmit="return Portofolio();">
+        <label for="inputnama">Nama</label>
+        <input type="text" name="nama" id="inputnama" placeholder="Nama Anda" />
 
-          <label for="inputrole">Role</label>
-          <input
-            type="text"
-            name="role"
-            id="inputrole"
-            placeholder="Role Anda"
-          />
+        <label for="inputrole">Role</label>
+        <input type="text" name="role" id="inputrole" placeholder="Role Anda" />
 
-          <label for="inputavaibility">Avaibility</label>
-          <input
-            type="text"
-            name="avaibility"
-            id="inputavaibility"
-            placeholder="Avaibility Anda"
-            default
-          />
+        <label for="inputavaibility">Avaibility</label>
+        <input
+          type="text"
+          name="avaibility"
+          id="inputavaibility"
+          placeholder="Avaibility Anda"
+          default
+        />
 
-          <label for="inputusia">Age</label>
-          <input type="text" name="age" id="inputusia" placeholder="Age Anda" />
+        <label for="inputusia">Age</label>
+        <input type="text" name="age" id="inputusia" placeholder="Age Anda" />
 
-          <label for="inputlokasi">Lokasi</label>
-          <input
-            type="text"
-            name="lokasi"
-            id="inputlokasi"
-            placeholder="Lokasi Anda"
-          />
+        <label for="inputlokasi">Lokasi</label>
+        <input
+          type="text"
+          name="lokasi"
+          id="inputlokasi"
+          placeholder="Lokasi Anda"
+        />
 
-          <label for="inputyearsexperience">Years Experience</label>
-          <input
-            type="text"
-            name="yearsexperience"
-            id="inputyearsexperience"
-            placeholder="Experience Anda"
-          />
+        <label for="inputyearsexperience">Years Experience</label>
+        <input
+          type="text"
+          name="yearsexperience"
+          id="inputyearsexperience"
+          placeholder="Experience Anda"
+        />
 
-          <label for="inputemail">Email</label>
-          <input
-            type="text"
-            name="email"
-            id="inputemail"
-            placeholder="Email Anda"
-          />
+        <label for="inputemail">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="inputemail"
+          placeholder="Email Anda"
+        />
 
-          <button class="" type="submit" value="Submit">Submit</button>
-        </form>
-      </div>
-      <script src="Assignment2.js"></script>
-    </div>
+        <button class="" type="submit" value="Submit">Submit</button>
+      </form>
+    </section>
+
+    <script src="Assginment2.js"></script>
   </body>
 </html>
